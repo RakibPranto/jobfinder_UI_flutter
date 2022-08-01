@@ -11,7 +11,7 @@ class _TopAppBarState extends State<TopAppBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 50, right: 25, left: 25),
+      padding: const EdgeInsets.only(right: 25, left: 25),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -24,7 +24,7 @@ class _TopAppBarState extends State<TopAppBar> {
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
               ),
               Text(
-                'Arham Javed',
+                'Annie Bryant',
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -47,9 +47,9 @@ class _TopAppBarState extends State<TopAppBar> {
                     ),
                     Positioned(
                       right: -1,
-                      top: 0,
+                      top: -1,
                       child: Container(
-                        padding: const EdgeInsets.all(5),
+                        padding: const EdgeInsets.all(4.5),
                         decoration: const BoxDecoration(
                             color: Colors.red, shape: BoxShape.circle),
                       ),
@@ -63,7 +63,7 @@ class _TopAppBarState extends State<TopAppBar> {
               ClipOval(
                 child: Image.asset(
                   'assets/images/avatar.png',
-                  width: 38,
+                  width: 40,
                 ),
               ),
             ],
